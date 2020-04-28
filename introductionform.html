@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link rel="stylesheet" type="text/css" href="styles/brand.css">
+	<link rel="icon" href="images/favicon.png" type="image/x-icon"/>
+    <title>Introduction Form</title>
+	<script src="scripts/introductionform.js"></script>
+</head>
+<body>
+    <div data-include="components/header.html"></div>
+	<main>
+		<h2>Introduction Form</h2>
+		<h1 id="greeting">Welcome!</h1>
+		<form id="nameForm" name="nameForm" >
+			<fieldset>
+				What is your name?<br>
+				<br>
+				<input title="Enter your full name here!" class="newTextBox" id="fullName" type="text" name="fullName" value="Alana Massi"><br>
+				<br>
+				What is your personal background?<br>
+				<br>
+				<input title="Enter your personal background here!" class="textBox" id="personalBackground" type="text" name="personalBackground" value="I was born in New York but my family moved to Charlotte when I was 3 after my sister was born. I have 4 dogs who are all rescues, a cat, a hamster and a turtle."><br>
+				<br>
+				What is your professional background?<br>
+				<br>
+				<input title="Enter your professional background here!" class="textBox" id="professionalBackground" type="text" name="professionalBackground" value="I worked with Marshall's as a part-time employee for about a year until I was promoted to the womens department coordinator. I worked there for about two more years until I became a shift lead at a pizza restaurant. I still work there part-time while I'm in school."><br>
+				<br>
+				What is your academic background?<br>
+				<br>
+				<input title="Enter your academic background here!" class="textBox" id="academicBackground" type="text" name="academicBackground" value=" I graduated high school in 2013 and started taking college classes the next year. i took two years of classes and then had to put my education on hold so I could focus on working for a while. This is my first year back at school since then so I'm very excited to learn."><br>
+				<br>
+				What is your background in the subject matter of this course?<br>
+				<br>
+				<input title="Enter your background in the subject matter of this course here!" class="textBox" id="subjectBackground" type="text" name="subjectBackground" value="My dad works as an architect for NTT Data so I'm a little familiar with the subject matter of this course. He always wanted me to purse a career in IT so he has offered some of his knowledge growing up."><br>
+				<br>
+				What is your primary computer platform?<br>
+				<br>
+				<input title="Enter your primary computer platform here!" class="newTextBox" id="computerPlatform" type="text" name="computerPlatform" value="Windows 10"><br>
+				<br>
+				What is the reason for taking each of your classes?<br>
+				<br>
+				<input title="Enter each class and the reason you are taking it here!" class="textBox" id="classReason" type="text" name="classReason" value="WEB 115-85: required for my certificate program. WEB 120-85: required for my certificate program."><br>
+				<br>
+				What is an interesting fact to remember you by?<br>
+				<br>
+				<input title="Enter an interesting fact to remember you by here!" class="textBox" id="interestingFact" type="text" name="interestingFact" value="My last name was legally changed from Maschiarelli to Massi about a year after I was born because no one could pronounce or spell it."><br>
+				<br>
+				What is another thing you would like to share?<br>
+				<br>
+				<input title="Enter something else you would like to share here!" class="textBox" id="somethingElse" type="text" name="somethingElse" value="I also have a side job as a makeup artist. I mostly do makeup for weddings and events."><br>
+	            <br>
+				<button type="button" onclick="displayName()">Submit</button><br>
+			</fieldset>
+		</form>
+	</main>
+	<div data-include="components/footer.html"></div>
+	<script src="scripts/HTMLinclude.js"></script>
+</body>
+</html>

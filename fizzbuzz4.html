@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+	<script>
+		function displayName(){
+			var firstnameval = document.nameform.firstname.value;
+			var middleinitialval = document.nameform.middleinitial.value;
+			var lastnameval = document.nameform.lastname.value;
+			var newFirstName = document.getElementById("firstname").value;
+			alert("Welcome " + firstnameval + " " + middleinitialval + "." + " " + lastnameval);
+			document.getElementById("greeting").innerHTML = "Welcome to Color Chaos Cosmetics " + firstnameval + " " + middleinitialval + "." + " " + lastnameval + "!";
+		}
+		function displayNumbers(){
+			var w = document.getElementById("total").value;
+			var x = document.getElementById("firstNumber").value;
+			var y = document.getElementById("secondNumber").value;
+			var z = document.getElementById("thirdNumber").value;
+			var m = document.getElementById("firstWord").value;
+			var n = document.getElementById("secondWord").value;
+			var o = document.getElementById("thirdWord").value;
+			var p = document.getElementById("defaultWord").value;
+			var a = y * x;
+			var b = y * z;
+			var c = x * z;
+			var text = "";
+			var i;
+			for (i = 1; i < w; i++) {
+					if (i % a == 0) {
+						text += i + " " + n + " " + m + "<br>";
+					}
+					else if (i % b == 0) {
+						text += i + " " + n + " " + o + "<br>";
+					}
+					else if (i % c == 0) {
+						text += i + " " + m + " " + o + "<br>";
+					}
+					else if (i % x == 0) {
+						text += i + " " + m + "<br>";
+					}
+					else if (i % y == 0) {
+						text += i + " " + n + "<br>";
+					}
+					else if (i % z == 0) {
+						text += i + " " + o + "<br>";
+					}
+					else {
+						text += i + " " + p + "<br>";
+					}
+			}
+					
+			document.getElementById("demo").innerHTML = text;
+		}
+	</script>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link rel="stylesheet" type="text/css" href="styles/brand.css">
+	<link rel="icon" href="images/favicon.png" type="image/x-icon"/ >
+    <title>Color Chaos Cosmetics - Fizz Buzz 0 Part 1</title>
+</head>
+<body>
+    <div data-include="components/header.html"></div>
+	<main>
+		<h2>Fizz Buzz 0 Part 1</h2>
+		<h3 id="greeting">Welcome to Color Chaos Cosmetics!</h3>
+		<form id="nameform" name="nameform" >
+			<fieldset>
+				<legend>Enter your name here:</legend>
+				First Name:<br>
+				<input title="Enter your first name here!" id="firstname" type="text" name="firstname" value="Alana"><br>
+				<br>
+				Middle Initial:<br>
+				<input title="Enter your middle initial here!" id="middleinitial" type="text" name="middleinitial" value="B"><br>
+				<br>
+				Last Name:<br>
+				<input title="Enter your last name here!" id="lastname" type="text" name="lastname" value="Massi"><br>
+				<br>
+				<button type="button" onClick="displayName()">Submit</button><br>
+				<br>
+			</fieldset>
+			<br>
+			<fieldset>
+				<legend>Enter 3 numbers and words:</legend>
+				<br>
+				First Number:<br>
+				<input id="firstNumber" type="text"><br>
+				<br>
+				First Word:<br>
+				<input id="firstWord" type="text" value="lipstick"><br>
+				<br>
+				Second Number:<br>
+				<input id="secondNumber" type="text"><br>
+				<br>
+				Second Word:<br>
+				<input id="secondWord" type="text" value="eyeshadow"><br>
+				<br>
+				Third Number:<br>
+				<input id="thirdNumber" type="text"><br>
+				<br>
+				Third Word:<br>
+				<input id="thirdWord" type="text" value="blush"><br>
+				<br>
+				Total:<br>
+				<input id="total" type="text" value="125"><br>
+				<br>
+				Default Word:<br>
+				<input id="defaultWord" type="text" value="makeup"><br>
+				<br>
+				<button type="button" onClick="displayNumbers()">Submit</button>
+				<br><div id="demo"></div>
+			</fieldset>
+		</form>
+		<br><div id="demo"></div>
+	</main>
+	<div data-include="components/footer.html"></div>
+	<script src="scripts/HTMLinclude.js"></script>
+</body>
+</html>

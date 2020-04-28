@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+	<script>
+		function displayName(){
+			var firstnameval = document.nameform.firstname.value;
+			var middleinitialval = document.nameform.middleinitial.value;
+			var lastnameval = document.nameform.lastname.value;
+			var newFirstName = document.getElementById("firstname").value;
+			alert("Welcome " + firstnameval + " " + middleinitialval + "." + " " + lastnameval);
+			document.getElementById("greeting").innerHTML = "Welcome to Color Chaos Cosmetics " + firstnameval + " " + middleinitialval + "." + " " + lastnameval + "!";
+			var text = "";
+			var i;
+			var newNumber = prompt("Enter a number " + firstnameval);
+			for (i = 1; i <= newNumber; i++) {
+				if (i % 2 == 0) {
+					text += i + " the number is even <br>";
+				}
+				else {
+					text += i + " the number is odd <br>";
+				}
+			}
+			
+			
+				
+			document.getElementById("demo").innerHTML = text;
+		}
+	</script>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link rel="stylesheet" type="text/css" href="styles/brand.css">
+	<link rel="icon" href="images/favicon.png" type="image/x-icon"/ >
+    <title>Color Chaos Cosmetics - Fizz Buzz 0 Part 2</title>
+</head>
+<body>
+    <div data-include="components/header.html"></div>
+	<main>
+		<h2>Fizz Buzz 0 Part 2</h2>
+		<h3 id="greeting">Welcome to Color Chaos Cosmetics!</h3>
+		<form id="nameform" name="nameform" >
+			<fieldset>
+				<legend>Enter your name here:</legend>
+				First Name:<br>
+				<input title="Enter your first name here!" id="firstname" type="text" name="firstname" value="Alana"><br>
+				<br>
+				Middle Initial:<br>
+				<input title="Enter your middle initial here!" id="middleinitial" type="text" name="middleinitial" value="B"><br>
+				<br>
+				Last Name:<br>
+				<input title="Enter your last name here!" id="lastname" type="text" name="lastname" value="Massi"><br>
+				<br>
+				<button type="button" onclick="displayName()">Submit</button><br>
+				<br><div id="demo"></div>
+			</fieldset>
+		</form>
+	</main>
+	<div data-include="components/footer.html"></div>
+	<script src="scripts/HTMLinclude.js"></script>
+</body>
+</html>

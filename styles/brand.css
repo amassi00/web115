@@ -1,0 +1,119 @@
+body
+{
+  margin: 25px;
+  font-family: "Courier New", courier, monospace;
+  color: #7f2ccb;
+  background-color: #3f195f;
+  font-size: 100%;
+  
+}
+.textBox 
+{
+  width: 100%;
+  padding-bottom: 50px;
+  word-break: break-all;
+ 
+  
+}
+.newTextBox
+{
+  width: 25%;
+ 
+}
+.hidden
+{
+	display: none;
+}
+
+header h1 
+{ 
+  text-align: center;
+  font-family: "Arial Black", Gadget, sans-serif;
+}
+
+footer
+{
+	text-align: center;
+}
+table
+{
+	width: 30%;
+}
+
+p
+{ color: #ff99ff;
+}
+div
+{
+	color: #ff99ff;
+}
+form
+{
+	color: #ff99ff;
+}
+
+h5
+{
+	text-align: center;
+	font-size: 100%;
+	color: #86cb92;
+}
+main h3
+{
+	color: #7f2ccb;
+}
+h4
+{ 
+	color: #86cb92;
+} 
+li
+{ 
+    color: #ff99ff;
+}
+#greeting
+{
+	text-align: center;
+	color: #86cb92;
+}
+a:link
+{ 
+	color: #ff99ff;
+	text-decoration: none;
+}
+a:visited
+{ 
+	color: #ff99ff;
+	text-decoration: none;
+}	
+a:hover 
+{
+	color: #86cb92;
+	text-decoration: underline;
+}
+ol li
+{
+	color: #86cb92;
+}
+h2
+{ 
+	text-align: center;
+	color: #7f2ccb;
+}
+.button
+{
+display: inline-block;
+font-family: "Courier New", courier, monospace;
+background-color: #533a71;
+border-radius: 5px;
+border: 2px double #ff99ff;
+color: #ff99ff;
+text-align: center;
+font-size: 14px;
+padding: 10px;
+width: 50px;
+margin: 2.5px;
+}
+figure
+{
+	text-align: center;
+}

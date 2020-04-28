@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+	<script>
+	function checkDivision(num1, num2) {
+	var is_divisible = false;
+	if ((num1 % num2 === 0) || (num2 % num1 === 0)) {
+		is_divisible = true;
+	}
+	return is_divisible;
+	function displayNumber() {
+	var x = document.numberForm.firstNumber.value;
+	var y = document.numberForm.secondNumber.value;
+	if (checkDivision(x,y) {
+		// creating a string for output
+		if (x > y) {
+			new_text = x + " is divided by " + y + ".";
+		} else {
+			new_text = y + " is divided by " + x + ".";
+		}
+	} else {
+		new_text = x + " and " + y + " are not divisible.";
+	}
+	document.getElementById("demo").innerHTML = new_text;
+		//function checkDivisible() {
+			//var x = document.numberForm.firstNumber.value;
+			//var y = document.numberForm.secondNumber.value;
+			//var text = "";
+			//var i;
+				//if (x % y === 0) {
+					//text += "true";
+				//}
+				//else {
+					//text += "false";
+				//}
+			//document.getElementById("demo").innerHTML = text;
+		//}
+	</script>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link rel="stylesheet" type="text/css" href="styles/brand.css">
+	<link rel="icon" href="images/favicon.png" type="image/x-icon"/ >
+    <title>Color Chaos Cosmetics - Fizz Buzz 2</title>
+</head>
+<body>
+    <div data-include="components/header.html"></div>
+	<main>
+		<h2>Fizz Buzz 2</h2>
+		<form id="numberForm" name="numberForm" >
+			<fieldset>
+				<legend>Enter your name here:</legend>
+				First Number:<br>
+				<input title="Enter your first number here!" id="firstNumber" type="text" name="firstNumber" value="8"><br>
+				<br>
+				Second Number:<br>
+				<input title="Enter your second number here!" id="secondNumber" type="text" name="secondNumber" value="2"><br>
+				<br>
+				<button type="button" onClick="displayOutput()">Submit</button><br>
+				<br>
+			</fieldset>
+		</form>
+		<div id="demo"></div>
+	</main>
+	<div data-include="components/footer.html"></div>
+	<script src="scripts/HTMLinclude.js"></script>
+</body>
+</html>

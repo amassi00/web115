@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link rel="stylesheet" type="text/css" href="styles/brand.css">
+	<link rel="icon" href="images/favicon.png" type="image/x-icon"/>
+    <title>Color Chaos Cosmetics - SWTLJS Examples 81-89</title>
+	<script src="scripts/chapters81-89.js"></script>
+</head>
+<body onLoad="checkForPopBlocker();">
+    <header>
+            <h1>Color Chaos Cosmetics</h1>
+			<h5>"Beauty Beyond Boundaries"</h5>
+    </header>
+	<main>
+		<h2>A Smarter Way to Learn Javascript Examples 81-89</h2>
+		<form onSubmit="return checkMakeupBrand();">
+			Please enter your favorite makeup brand.<br>
+			<br>
+			<input type="text" id="makeupBrand">
+			<input type="submit" value="Submit Form">
+		</form>
+		<br>
+		<form onSubmit="return checkForSelection();">
+			<select id="brands">
+				<option value="" selected="selected">SELECT A BRAND</option>
+					<option value="UD">Urban Decay</option>
+					<option value="HB">Huda Beauty</option>
+					<option value="JS">Jeffree Star</option>
+					<option value="KC">Kylie Cosmetics</option>
+			</select>&nbsp;&nbsp;
+			<input type="submit" value="Submit Form">
+		</form>
+		<br>
+		<form onSubmit="return validateRadios();">
+			<input type="radio" name="r1" value="UD"> Urban Decay<br>
+			<input type="radio" name="r1" value="HB"> Huda Beauty<br>
+			<input type="radio" name="r1" value="JS"> Jeffree Star<br>
+			<input type="radio" name="r1" value="KC"> Kylie Cosmetics<br>
+			<br>
+			<input type="submit" value="Submit Form">
+		</form>
+		<br>
+		<form onSubmit="return validateZIP();">
+			Please enter your ZIP Code.<br>
+			<br>
+			<input type="text" id="zip">
+			<input type="submit" value="Submit Form">
+		</form>
+		<br>
+		<form onSubmit="return validateEmail();">
+			Please enter your email.<br>
+			<br>
+			<input type="text" id="email">
+			<input type="submit" value="Submit Form">
+		</form>
+		<br>
+		<button onClick="tryCatch();">Click for try and catch</button>
+		<br>
+		<form onSubmit="return checkPassword();">
+			<br>
+			Enter a password<br>
+			(8-12 characters, at least 1 number, no spaces)<br>
+			<br>
+			<input type="text" id="fl">
+			<input type="submit" value="Submit">
+		</form>
+	</main>
+	<footer> 
+		<br><a href="http://students.cpcc.edu/~amassi00/">Webspace</a> || <a href="https://github.com/amassi00">Github</a> || <a href="https://amassi00.github.io/">Github Pages</a> || <a href="https://www.khanacademy.org/profile/kaid_1005400946852923968819273/courses">Khan Academy</a> || <a href="https://www.freecodecamp.org/amassi00">FreeCodeCamp</a> || <a href="https://www.codecademy.com/profiles/amassi00Codecademy">Codecademy</a> || <a href="https://jsfiddle.net/user/amassi00/fiddles/">JSFiddle</a> || <a href="https://profile.edx.org/u/amassi00">Edx</a> || <a href="https://www.linkedin.com/in/alana-massi-92784719a/">LinkedIn</a><br>
+		<br>Designed by &copy;Alana Massi
+		<br>
+		<!--<br><button onclick=window.location.href="http://validator.w3.org/check?uri=referer" type="button">HTML</button>
+		<button onclick=window.location.href="http://jigsaw.w3.org/css-validator/check/referer" type="button">CSS</button>-->
+		<br><a href="http://validator.w3.org/check?uri=referer" class="button">HTML</a>
+		<a href="http://jigsaw.w3.org/css-validator/check/referer" class="button">CSS</a>
+		<br>
+    </footer>
+</body>
+</html>

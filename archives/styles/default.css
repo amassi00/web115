@@ -1,0 +1,33 @@
+body
+{
+  margin: 100px;
+  font-family: arialblack, gadget, sans-serif;
+  color: saddlebrown;
+  background-color: powderblue;
+  font-size: 100%;
+}
+header h1
+{ 
+  text-align: center;
+}
+table
+{
+	width: 30%;
+}
+figure
+{ 
+	text-align: center;
+}
+footer
+{
+	text-align: center;
+}
+	
+	
+.workflowimg
+{
+	width: 800px;
+	height: 400px;
+}
+
+

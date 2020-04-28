@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link rel="stylesheet" type="text/css" href="styles/brand.css">
+	<link rel="icon" href="images/favicon.png" type="image/x-icon"/>
+    <title>Color Chaos Cosmetics - SWTLJS Examples 41-50</title>
+	<script>
+		function displayBrand() {
+		//first list
+			var makeup = ["Jeffree Star Cosmetics", "ColourPop"];
+			var text = "";
+			var i = 0;
+			while (i < makeup.length) {
+				text += makeup[i] + "<br>";
+				i++;
+			}
+		document.getElementById("brand").innerHTML = text;
+		//secondlist
+			var newMakeup = ["Fenty Beauty", "Huda Beauty", "Too Faced Cosmetics"];
+			var text = "";
+			var x = 0;
+			do {
+				text += newMakeup[x] + "<br>";
+				x++;
+			} while (x < newMakeup.length);
+
+	
+		document.getElementById("demo").innerHTML = text;
+		}
+		function favoriteBrand() {
+			alert("Morphe Cosmetics!");
+		}
+		function newFavoriteBrand() {
+			alert("Morphe Cosmetics!");
+		}
+		function secondFavoriteBrand() {
+			alert("Morphe Cosmetics!");
+		}
+		function yourFavoriteBrand() {
+			alert("Good choice!");
+		}
+		function fillBrand() {
+			var storeName;
+			var productEntered = document.getElementById("product").value;
+			switch (productEntered) {
+			case "makeup":
+				storeName = "Sephora";
+				break;
+			case "skin care":
+				storeName = "Bath and Body Works";
+				break;
+			case "hair care":
+				storeName = "Sally Beauty Supply";
+				break;
+			default:
+				storeName = "Ulta";
+			}
+			document.getElementById("store").value = storeName;
+		}
+	</script>
+</head>
+
+<body onload="displayBrand()">
+    <div data-include="components/header.html"></div>
+	<main>
+		<h2>A Smarter Way to Learn Javascript Examples 41-50</h2>
+		<form onSubmit="yourFavoriteBrand();">
+			Enter your favorite makeup brand:<br>
+			<br>
+			<input type="text" onFocus="this.style.backgroundColor = '#86cb92';" onBlur="this.style.backgroundColor = 'white';"><br>
+			<br>
+			<input type="submit" value="Submit">
+		</form>
+		<br>
+		<form>
+			What kind of beauty product are you looking for?<br>
+			<br>
+			<input type="text" id="product" onBlur="fillBrand();"><br>
+			<br>
+			The best beauty brand store for you!<br>
+			<br>
+			<input type="text" id="store">
+		</form>
+		<p>Some of my favorite makeup brands are:</p>
+		<div id="demo"></div>
+		<div id="brand"></div>
+		<br>
+		<a href="JavaScript:void(0)" onClick="favoriteBrand();">Click Here to reveal my all-time favorite makeup brand!</a><br>
+		<br>
+		<input type="button" value="Click to reveal my favorite brand!" onClick="newFavoriteBrand();">
+		<br>
+		<p onMouseOver="secondFavoriteBrand();">Scroll over to reveal my all-time favorite makeup brand!</p>
+
+	</main>
+	<div data-include="components/footer.html"></div>
+	<script src="scripts/HTMLinclude.js"></script>
+</body>
+</html>

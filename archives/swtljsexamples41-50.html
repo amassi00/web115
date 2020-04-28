@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link rel="stylesheet" type="text/css" href="styles/brand.css">
+	<link rel="icon" href="images/favicon.png" type="image/x-icon"/>
+    <title>Color Chaos Cosmetics - SWTLJS Examples 41-50</title>
+	<script>
+		function displayBrand() {
+		//first list
+			var makeup = ["Jeffree Star Cosmetics", "ColourPop"];
+			var text = "";
+			var i = 0;
+			while (i < makeup.length) {
+				text += makeup[i] + "<br>";
+				i++;
+			}
+		document.getElementById("brand").innerHTML = text;
+		//secondlist
+			var newMakeup = ["Fenty Beauty", "Huda Beauty", "Too Faced Cosmetics"];
+			var text = "";
+			var x = 0;
+			do {
+				text += newMakeup[x] + "<br>";
+				x++;
+			} while (x < newMakeup.length);
+
+	
+		document.getElementById("demo").innerHTML = text;
+		}
+		function favoriteBrand() {
+			alert("Morphe Cosmetics!");
+		}
+		function newFavoriteBrand() {
+			alert("Morphe Cosmetics!");
+		}
+		function secondFavoriteBrand() {
+			alert("Morphe Cosmetics!");
+		}
+		function yourFavoriteBrand() {
+			alert("Good choice!");
+		}
+		function fillBrand() {
+			var storeName;
+			var productEntered = document.getElementById("product").value;
+			switch (productEntered) {
+			case "makeup":
+				storeName = "Sephora";
+				break;
+			case "skin care":
+				storeName = "Bath and Body Works";
+				break;
+			case "hair care":
+				storeName = "Sally Beauty Supply";
+				break;
+			default:
+				storeName = "Ulta";
+			}
+			document.getElementById("store").value = storeName;
+		}
+	</script>
+</head>
+
+<body onload="displayBrand()">
+    <header>
+            <h1>Color Chaos Cosmetics</h1>
+			<h5>"Beauty Beyond Boundaries"</h5>
+	</header>
+	<main>
+		<h2>A Smarter Way to Learn Javascript Examples 41-50</h2>
+		<form onSubmit="yourFavoriteBrand();">
+			Enter your favorite makeup brand:<br>
+			<br>
+			<input type="text" onFocus="this.style.backgroundColor = '#86cb92';" onBlur="this.style.backgroundColor = 'white';"><br>
+			<br>
+			<input type="submit" value="Submit">
+		</form>
+		<br>
+		<form>
+			What kind of beauty product are you looking for?<br>
+			<br>
+			<input type="text" id="product" onBlur="fillBrand();"><br>
+			<br>
+			The best beauty brand store for you!<br>
+			<br>
+			<input type="text" id="store">
+		</form>
+		<p>Some of my favorite makeup brands are:</p>
+		<div id="demo"></div>
+		<div id="brand"></div>
+		<br>
+		<a href="JavaScript:void(0)" onClick="favoriteBrand();">Click Here to reveal my all-time favorite makeup brand!</a><br>
+		<br>
+		<input type="button" value="Click to reveal my favorite brand!" onClick="newFavoriteBrand();">
+		<br>
+		<p onMouseOver="secondFavoriteBrand();">Scroll over to reveal my all-time favorite makeup brand!</p>
+
+	</main>
+	<footer> 
+		<br><a href="http://students.cpcc.edu/~amassi00/">Webspace</a> || <a href="https://github.com/amassi00">Github</a> || <a href="https://amassi00.github.io/">Github Pages</a> || <a href="https://www.khanacademy.org/profile/kaid_1005400946852923968819273/courses">Khan Academy</a> || <a href="https://www.freecodecamp.org/amassi00">FreeCodeCamp</a> || <a href="https://www.codecademy.com/profiles/amassi00Codecademy">Codecademy</a> || <a href="https://jsfiddle.net/user/amassi00/fiddles/">JSFiddle</a> || <a href="https://profile.edx.org/u/amassi00">Edx</a> || <a href="https://www.linkedin.com/in/alana-massi-92784719a/">LinkedIn</a><br>
+		<br>Designed by &copy;Alana Massi
+		<br>
+		<!--<br><button onclick=window.location.href="http://validator.w3.org/check?uri=referer" type="button">HTML</button>
+		<button onclick=window.location.href="http://jigsaw.w3.org/css-validator/check/referer" type="button">CSS</button>-->
+		<br><a href="http://validator.w3.org/check?uri=referer" class="button">HTML</a>
+		<a href="http://jigsaw.w3.org/css-validator/check/referer" class="button">CSS</a>
+		<br>
+    </footer>
+</body>
+</html>

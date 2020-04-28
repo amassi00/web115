@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+	<script>
+		function displayName(){
+			var text = "";
+			var i;
+			for (i = 1; i < 141; i++) {
+				//text += i + " eyeshadow" + "<br>";
+					if (i % 15 == 0) {
+						text += i + " eyeshadow" + " lipstick<br>";
+					}
+					else if (i % 21 == 0) {
+						text += i + " eyeshadow" + " blush<br>";
+					}
+					else if (i % 35 == 0) {
+						text += i + " lipstick" + " blush<br>";
+					}
+					else if (i % 5 == 0) {
+						text += i + " lipstick<br>";
+					}
+					else if (i % 3 == 0) {
+						text += i + " eyeshadow<br>";
+					}
+					else if (i % 7 == 0) {
+						text += i + " blush<br>";
+					}
+					else {
+						text += i + " makeup<br>"
+					}
+			}
+					
+			document.getElementById("demo").innerHTML = text;
+		}
+	</script>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link rel="stylesheet" type="text/css" href="styles/brand.css">
+	<link rel="icon" href="images/favicon.png" type="image/x-icon"/>
+    <title>Color Chaos Cosmetics-Fizz Buzz 3</title>
+</head>
+<body onload="displayName()">
+    <div data-include="components/header.html"></div>
+	<main>
+		<h2>Fizz Buzz 3</h2>
+		<fieldset>
+			<div id="demo"></div>
+		</fieldset>
+	</main>
+	<div data-include="components/footer.html"></div>
+	<script src="scripts/HTMLinclude.js"></script>
+</body>
+</html>
